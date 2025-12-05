@@ -9,10 +9,10 @@ let userEmail;
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 const bigNumber = 342345345435n
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
 // Reference Type (Non Primitive)
 
@@ -26,9 +26,28 @@ let myObj = {
 }
 
 const myFunction = function(){
-    console.log("Hello World");
+    // console.log("Hello World");
     
 }
 
-console.log(typeof heros);
+// console.log(typeof heros);
+
+// Memory 
+// Stack(Primitive) and Heap(Non - Primitive)
+let myYoutbeName = "pinank"
+let anotherName = myYoutbeName
+anotherName = "chaiaurcode"
+// console.log(anotherName);
+// console.log(myYoutbeName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "pinank@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
 
